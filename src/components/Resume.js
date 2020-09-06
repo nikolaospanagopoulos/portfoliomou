@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "./Navbar";
 import "./Resume.css";
-import {Box} from "@material-ui/core/styles";
+
   
 
 const Resume = () => {
