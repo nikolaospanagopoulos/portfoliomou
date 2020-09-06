@@ -1,0 +1,26 @@
+
+.box{
+   align-items: center;
+   margin: 0 auto;
+   width: 10%;
+   border:5px solid darkgoldenrod;
+}
+
+.resume{
+    background: #233;
+    height: 100vh;
+}
+
+.text{
+    text-align: center;
+    
+}
+.title{    
+    color: tomato;
+}
+.subtitle{
+    color:tomato
+}
+.subtitle1{
+    color:tan
+}
