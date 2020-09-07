@@ -17,6 +17,7 @@ import Goldcurrency from "../Goldcurrency.jpg";
 import Bookstore from "../Bookstore.jpg";
 import pictureinpicture from "../pictureinpicture.jpg";
 import funnyrobots from "../funnyrobots.jpg";
+import landingpage from "../landingpage.jpg";
 
 const useStyles = makeStyles({
   mainContainer: {
@@ -165,7 +166,41 @@ const Portfolio = () => {
               </CardContent>
             </CardActionArea>
             <CardActions>
-              <Button size="small" color="primary">
+              <Button size="small" color="primary"
+              onClick={() => {
+                openInNewTab("https://mystifying-mirzakhani-7569d0.netlify.app/")}}>
+                live demo
+              </Button>
+            </CardActions>
+          </Card>
+        </Grid>
+        {/*project 5*/ }
+        <Grid item xs={12} sm={8} md={6}>
+          <Card className={classes.cardContainer}>
+            <CardActionArea>
+              <CardMedia
+                component="img"
+                alt="project 1"
+                height="140"
+                image={landingpage}
+              />
+              <CardContent>
+                <Typography gutterBottom variant="h5">
+                  Landing page
+                </Typography>
+                <Typography variant="body2" color="textSecondary" component="p">
+                  A company landing page with many complex animations. 
+                </Typography>
+              </CardContent>
+            </CardActionArea>
+            <CardActions>
+              <Button
+                size="small"
+                color="primary"
+                onClick={() => {
+                  openInNewTab("https://heuristic-murdock-15e38d.netlify.app/");
+                }}
+              >
                 live demo
               </Button>
             </CardActions>
