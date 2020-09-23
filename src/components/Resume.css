@@ -1,14 +1,15 @@
 
 .box{
+   max-width: 30%;
    align-items: center;
    margin: 0 auto;
-   width: 10%;
+ 
    border:5px solid darkgoldenrod;
 }
 
 .resume{
     background: #233;
-    height: 100vh;
+    max-height: max-content;
 }
 
 .text{
@@ -24,3 +25,9 @@
 .subtitle1{
     color:tan
 }
+
+@media only screen and (max-width: 800px) {
+  .box{
+      max-width: 100%;
+  }
+  }

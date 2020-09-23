@@ -29,7 +29,10 @@ const Resume = () => {
           <h2 className="subtitle1">Front-end Development<br/>HTML , CSS , React, Redux<br/> Photoshop</h2>
           <h2 className="subtitle">Languages:</h2>
           <h2 className="subtitle1">Professional English, B2 level of spanish, Basic Russian<br/>Native Greek</h2>
-          
+          <br/>
+          <br/>
+          <br/>
+          <br/>
         </div>
       </div>
     </div>
