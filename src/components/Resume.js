@@ -26,7 +26,7 @@ const Resume = () => {
           <h2 className="subtitle"> Computer Languages:</h2>
           <h2 className="subtitle1">Javascript<br/>Python</h2>
           <h2 className="subtitle"> Skills:</h2>
-          <h2 className="subtitle1">Front-end Development<br/>HTML , CSS , React, Redux<br/> Photoshop</h2>
+          <h2 className="subtitle1">HTML , CSS , React, Redux, Flask, Beautiful Soup,<br/>Image, PDF and text files processing with Python,<br/> Photoshop</h2>
           <h2 className="subtitle">Languages:</h2>
           <h2 className="subtitle1">Professional English, B2 level of spanish, Basic Russian<br/>Native Greek</h2>
           <br/>

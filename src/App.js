@@ -10,13 +10,13 @@ import Contacts from "./components/Contacts.js";
 
 function App() {
   return (
-   <>
-   <CssBaseline/>
-   <Route exact path="/" component={Home}/>
-   <Route  path="/resume" component={Resume}/>
-   <Route path="/portfolio" component={Portfolio}/>
-   <Route path="/contacts" component={Contacts}/>
-   </>
+    <>
+    <CssBaseline/>
+    <Route exact path="/" component={Home}/>
+    <Route  path="/resume" component={Resume}/>
+    <Route path="/portfolio" component={Portfolio}/>
+    <Route path="/contacts" component={Contacts}/>
+    </>
   );
 }
 

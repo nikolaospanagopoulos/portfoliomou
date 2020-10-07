@@ -52,7 +52,7 @@ const Header = () => {
       <br />
       <Typography className={classes.subtitle} variant="h5">
         <Typed
-          strings={["Web Designer", "Web Developer"]}
+          strings={["Web Designer", "Web Developer","Python Developen"]}
           typeSpeed={40}
           backSpeed={60}
           loop
@@ -61,7 +61,7 @@ const Header = () => {
       <br />
       <Typography   className={classes.extrasubtitle} variant="h5">
         <Typed
-          strings={["HTML", "CSS", "Javascript", "Python", "React","Photoshop"]}
+          strings={["HTML", "CSS", "Javascript", "Python", "React","Photoshop",'Flask']}
           typeSpeed={40}
           backSpeed={60}
           loop

@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import me from '../me.jpg';
 import {
   AppBar,
   Toolbar,
@@ -21,11 +22,12 @@ import {
   ContactMail,
 } from "@material-ui/icons";
 import DehazeIcon from '@material-ui/icons/Dehaze';
-import me from "../me.jpg";
+
 
 import { makeStyles } from "@material-ui/core/styles";
 import MobilRightMenuSlider from "@material-ui/core/Drawer";
 import {Link} from "react-router-dom";
+
 //css styles
 //helps us change material ui default styles
 const useStyles = makeStyles((theme) => ({
@@ -115,7 +117,7 @@ const Navbar = () => {
             open={state.right}
             onClose={toggleSlider("right",false)} >
             
-             {sideList("right")}
+              {sideList("right")}
             </MobilRightMenuSlider>
           </Toolbar>
         </AppBar>
