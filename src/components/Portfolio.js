@@ -17,12 +17,12 @@ import Bookstore from "../Bookstore.jpg";
 import pictureinpicture from "../pictureinpicture.jpg";
 import funnyrobots from "../funnyrobots.jpg";
 import landingpage from "../landingpage.jpg";
-import HandmadeGuitars from "../HandmadeGuitars.jpg";
+import HandmadeGuitars from "../HandmadeGuitars1.png";
 import countdown from '../countdown.png'
 import musicplayer from '../musicplayer.png'
 import gold from '../gold.png'
 import pong from '../pong.png'
-import animation from '../animation.png'
+import animation1 from '../animation1.png'
 import bookmark from '../bookmark.png'
 const useStyles = makeStyles({
   mainContainer: {
@@ -286,7 +286,7 @@ const Portfolio = () => {
                 component="img"
                 alt="project 1"
                 height="140"
-                image={animation}
+                image={animation1}
               />
               <CardContent>
                 <Typography gutterBottom variant="h5">

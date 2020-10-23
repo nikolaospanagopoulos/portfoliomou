@@ -1,6 +1,7 @@
 import React from "react";
 import { Typography, Avatar, Grid, Box } from "@material-ui/core";
-import me from "../me.jpg";
+import me2 from "../me2.jpg";
+
 import Typed from "react-typed";
 import { makeStyles } from "@material-ui/core/styles";
 
@@ -42,7 +43,7 @@ const Header = () => {
       
       <Avatar
         className={classes.avatar}
-        src={me}
+        src={me2}
         alt="Nikolaos Panagopoulos"
       />
       </Grid>

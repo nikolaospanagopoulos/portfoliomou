@@ -1,5 +1,6 @@
 import React, {useState} from "react";
-import me from '../me.jpg';
+import me2 from '../me2.jpg';
+
 import {
   AppBar,
   Toolbar,
@@ -83,7 +84,7 @@ const Navbar = () => {
     >
         <Avatar
           className={classes.avatar}
-          src={me}
+          src={me2}
           alt="Nikolaos Panagopoulos"
         />
         <Divider />
