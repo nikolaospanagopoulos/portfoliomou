@@ -24,9 +24,9 @@ const Resume = () => {
           <h2 className="subtitle">2016</h2>
           <h2 className="subtitle1">B.A in classics and literature,<br/>Linguistics</h2>
           <h2 className="subtitle"> Computer Languages:</h2>
-          <h2 className="subtitle1">Javascript<br/>Python</h2>
+          <h2 className="subtitle1">Javascript, Typescript<br/>Python</h2>
           <h2 className="subtitle"> Skills:</h2>
-          <h2 className="subtitle1">HTML , CSS , React, Redux, Flask, Beautiful Soup,<br/>Image, PDF and text files processing with Python,<br/> Photoshop</h2>
+          <h2 className="subtitle1">HTML , CSS , React, Redux, Vue ,Vuex <br/> Deno, Flask, Beautiful Soup<br/> Photoshop</h2>
           <h2 className="subtitle">Languages:</h2>
           <h2 className="subtitle1">Professional English, B2 level of spanish, Basic Russian<br/>Native Greek</h2>
           <br/>
