@@ -61,7 +61,7 @@ const menuItems = [
   },
   {
     listIcon: <Apps />,
-    listText: "Portfolio",
+    listText: "Projects",
     listPath: "/portfolio"
   },
   {

@@ -13,6 +13,7 @@ import {
   Button,
   Typography,
 } from "@material-ui/core";
+import crownClothing from '../crownClothing.png'
 import Bookstore from "../Bookstore.jpg";
 import pictureinpicture from "../pictureinpicture.jpg";
 import funnyrobots from "../funnyrobots.jpg";
@@ -47,6 +48,71 @@ const Portfolio = () => {
     <Box component="div" className={classes.mainContainer}>
       <Navbar />
       <Grid container justify="center">
+   {/*project1*/ }
+   <Grid item xs={12} sm={8} md={6}>
+          <Card className={classes.cardContainer}>
+            <CardActionArea onClick={() => {
+                  openInNewTab("https://hardcore-villani-eda63f.netlify.app/");
+                }}>
+              <CardMedia
+                component="img"
+                alt="project 1"
+                height="140"
+                image={crownClothing}
+              />
+              <CardContent>
+                <Typography gutterBottom variant="h5">
+                  Countdown App
+                </Typography>
+                <Typography variant='subtitle1'>REACT REDUX</Typography>
+                <Typography variant="body2" color="textSecondary" component="p">
+                  A fully functionall fullstack store website , using react, redux, redux thunk ,styled-components,firebase,stripe for online payments, local storage and firestore. 
+                </Typography>
+              </CardContent>
+            </CardActionArea>
+            <CardActions>
+              <Button
+                size="small"
+                color="primary"
+                onClick={() => {
+                  openInNewTab("https://hardcore-villani-eda63f.netlify.app/");
+                }}
+              >
+                live demo
+              </Button>
+            </CardActions>
+          </Card>
+        </Grid>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         {/*project1*/ }
         <Grid item xs={12} sm={8} md={6}>
           <Card className={classes.cardContainer}>
