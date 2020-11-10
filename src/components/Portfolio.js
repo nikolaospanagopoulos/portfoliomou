@@ -25,6 +25,7 @@ import gold from '../gold.png'
 import pong from '../pong.png'
 import animation1 from '../animation1.png'
 import bookmark from '../bookmark.png'
+import techno from '../techno.png'
 const useStyles = makeStyles({
   mainContainer: {
     background: "#233",
@@ -64,7 +65,7 @@ const Portfolio = () => {
                 <Typography gutterBottom variant="h5">
                   Countdown App
                 </Typography>
-                <Typography variant='subtitle1'>REACT REDUX</Typography>
+                <Typography variant='subtitle1'>REACT REDUX FIREBASE</Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
                   A fully functionall fullstack store website , using react, redux, redux thunk ,styled-components,firebase,stripe for online payments, local storage and firestore. 
                 </Typography>
@@ -91,7 +92,43 @@ const Portfolio = () => {
 
 
 
-
+      {/*project 2*/}
+      <Grid item xs={12} sm={8} md={6}>
+          <Card className={classes.cardContainer}>
+            <CardActionArea onClick={() => {
+                  openInNewTab("https://reverent-newton-5fa4e4.netlify.app/");
+                }}>
+              <CardMedia
+                component="img"
+                alt="project 1"
+                height="140"
+                image={techno}
+              />
+              <CardContent>
+              
+                <Typography gutterBottom variant="h5">
+                  Animated Techno Website
+                </Typography>
+                <Typography variant='subtitle1'>REACT</Typography>
+                <Typography variant="body2" color="textSecondary" component="p">
+                  A company landing page coded with React, React-Hooks and particle.js . It uses animations and interactions to provide a unique user experience. 
+                </Typography>
+              </CardContent>
+            </CardActionArea>
+            <CardActions>
+              <Button
+                size="small"
+                color="primary"
+                onClick={() => {
+                  openInNewTab("https://reverent-newton-5fa4e4.netlify.app/");
+                }}
+              >
+                live demo
+              </Button>
+            </CardActions>
+          </Card>
+        </Grid>
+        
 
 
 
@@ -342,41 +379,7 @@ const Portfolio = () => {
         
         
         
-        {/*project 7*/}
-        <Grid item xs={12} sm={8} md={6}>
-          <Card className={classes.cardContainer}>
-            <CardActionArea onClick={() => {
-                  openInNewTab("https://elated-jang-b30836.netlify.app/");
-                }}>
-              <CardMedia
-                component="img"
-                alt="project 1"
-                height="140"
-                image={animation1}
-              />
-              <CardContent>
-                <Typography gutterBottom variant="h5">
-                  Animation website
-                </Typography>
-                <Typography variant="body2" color="textSecondary" component="p">
-                  A site with amazing css animations.
-                </Typography>
-              </CardContent>
-            </CardActionArea>
-            <CardActions>
-              <Button
-                size="small"
-                color="primary"
-                onClick={() => {
-                  openInNewTab("https://elated-jang-b30836.netlify.app/");
-                }}
-              >
-                live demo
-              </Button>
-            </CardActions>
-          </Card>
-        </Grid>
-        
+  
         
         {/*project 8*/}
         <Grid item xs={12} sm={8} md={6}>
