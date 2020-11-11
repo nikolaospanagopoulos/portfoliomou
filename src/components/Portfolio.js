@@ -13,19 +13,19 @@ import {
   Button,
   Typography,
 } from "@material-ui/core";
-import crownClothing from '../crownClothing.png'
-import Bookstore from "../Bookstore.jpg";
-import pictureinpicture from "../pictureinpicture.jpg";
-import funnyrobots from "../funnyrobots.jpg";
-import landingpage from "../landingpage.jpg";
-import HandmadeGuitars from "../HandmadeGuitars1.png";
-import countdown from '../countdown.png'
-import musicplayer from '../musicplayer.png'
-import gold from '../gold.png'
-import pong from '../pong.png'
-import animation1 from '../animation1.png'
-import bookmark from '../bookmark.png'
-import techno from '../techno.png'
+import crownClothing from '../pictures/crownClothing.png'
+import Bookstore from "../pictures/Bookstore.jpg";
+import pictureinpicture from "../pictures/pictureinpicture.jpg";
+import funnyrobots from "../pictures/funnyrobots.jpg";
+import landingpage from "../pictures/landingpage.jpg";
+import HandmadeGuitars from "../pictures/HandmadeGuitars1.png";
+import countdown from '../pictures/countdown.png'
+import musicplayer from '../pictures/musicplayer.png'
+import gold from '../pictures/gold.png'
+import pong from '../pictures/pong.png'
+import bookmark from '../pictures/bookmark.png'
+import techno from '../pictures/techno.png'
+
 const useStyles = makeStyles({
   mainContainer: {
     background: "#233",

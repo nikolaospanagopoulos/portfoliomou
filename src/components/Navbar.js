@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import me2 from '../me2.jpg';
+import me2 from '../pictures/me2.jpg'
 
 import {
   AppBar,
