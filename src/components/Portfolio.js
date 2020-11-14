@@ -63,7 +63,7 @@ const Portfolio = () => {
               />
               <CardContent>
                 <Typography gutterBottom variant="h5">
-                  Countdown App
+                  Crown Clothing Ltd
                 </Typography>
                 <Typography variant='subtitle1'>REACT REDUX FIREBASE</Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
