@@ -13,7 +13,8 @@ import {
   Button,
   Typography,
 } from "@material-ui/core";
-import crownClothing from '../pictures/crownClothing.png'
+import Welcometotheguitarstore from '../pictures/Welcometotheguitarstore.png';
+import crownClothing from '../pictures/crownClothing.png';
 import Bookstore from "../pictures/Bookstore.jpg";
 import pictureinpicture from "../pictures/pictureinpicture.jpg";
 import funnyrobots from "../pictures/funnyrobots.jpg";
@@ -49,6 +50,50 @@ const Portfolio = () => {
     <Box component="div" className={classes.mainContainer}>
       <Navbar />
       <Grid container justify="center">
+
+
+
+
+
+      {/*project1*/ }
+   <Grid item xs={12} sm={8} md={6}>
+          <Card className={classes.cardContainer}>
+            <CardActionArea onClick={() => {
+                  openInNewTab("https://guitarshop2.herokuapp.com/");
+                }}>
+              <CardMedia
+                component="img"
+                alt="project 1"
+                height="140"
+                image={Welcometotheguitarstore}
+              />
+              <CardContent>
+                <Typography gutterBottom variant="h5">
+                  Guitarstore 
+                </Typography>
+                <Typography variant='subtitle1'>MERN STACK</Typography>
+                <Typography variant="body2" color="textSecondary" component="p">
+                  A full-stack application using the React for the front-end, Redux for state managment, Node.js and express for the back-end , and MongoDB as a database. It also uses the PayPal api and bootstrap. It has real world functionality. The customer can buy products that are in stock, he can leave reviews and see the top  products through the carousel component. When the website manager enters with his credentials, he can add new products, he can update existing ones and add them to stock , he can complete orders with shipping and he can manage users.
+                </Typography>
+              </CardContent>
+            </CardActionArea>
+            <CardActions>
+              <Button
+                size="small"
+                color="primary"
+                onClick={() => {
+                  openInNewTab("https://hardcore-villani-eda63f.netlify.app/");
+                }}
+              >
+                live demo
+              </Button>
+            </CardActions>
+          </Card>
+        </Grid>
+
+
+
+
    {/*project1*/ }
    <Grid item xs={12} sm={8} md={6}>
           <Card className={classes.cardContainer}>
