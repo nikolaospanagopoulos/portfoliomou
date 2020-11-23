@@ -3,7 +3,7 @@ import React from "react";
 import "./Contacts.css";
 import Navbar from "../components/Navbar";
 
-import { FaLinkedin,FaGithub,FaFacebookSquare} from 'react-icons/fa'
+import { FaLinkedin,FaGithub} from 'react-icons/fa'
 class Contacts extends React.Component {
   openInNewTab = (url) => {
     const newWindow = window.open(url, "_blank", "noopener,noreferrer");
@@ -27,11 +27,8 @@ class Contacts extends React.Component {
         </div>
         <div className='social-icons'>
           <h3>Social Media:</h3>
-        <FaFacebookSquare className='fb' onClick={() => {
-                  this.openInNewTab("https://www.facebook.com/nick.panagopoulos1/");
-                }}/>
-        <FaLinkedin className='linkdin'/>
-        <FaGithub className='git'/>
+        <FaLinkedin className='linkdin' onClick={()=>this.openInNewTab('https://www.linkedin.com/in/nikolaos-panagopoulos-2004aa1b9/')}/>
+        <FaGithub className='git' onClick={()=>this.openInNewTab('https://github.com/nikolaospanagopoulos')}/>
         </div>
         <footer>
           This website was created with React, React-Router, Material UI
