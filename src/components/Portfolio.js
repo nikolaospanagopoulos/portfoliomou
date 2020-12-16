@@ -13,14 +13,13 @@ import {
   Button,
   Typography,
 } from "@material-ui/core";
+import starwars from '../pictures/starwars.png'
 import Welcometotheguitarstore from '../pictures/Welcometotheguitarstore.png';
 import crownClothing from '../pictures/crownClothing.png';
 import Bookstore from "../pictures/Bookstore.jpg";
 import pictureinpicture from "../pictures/pictureinpicture.jpg";
-import funnyrobots from "../pictures/funnyrobots.jpg";
 import landingpage from "../pictures/landingpage.jpg";
 import HandmadeGuitars from "../pictures/HandmadeGuitars1.png";
-import countdown from '../pictures/countdown.png'
 import musicplayer from '../pictures/musicplayer.png'
 import gold from '../pictures/gold.png'
 import pong from '../pictures/pong.png'
@@ -133,7 +132,43 @@ const Portfolio = () => {
 
 
 
-
+{/*project 2*/}
+<Grid item xs={12} sm={8} md={6}>
+          <Card className={classes.cardContainer}>
+            <CardActionArea onClick={() => {
+                  openInNewTab("http://swapitestapp2.herokuapp.com/");
+                }}>
+              <CardMedia
+                component="img"
+                alt="project 1"
+                height="140"
+                image={starwars}
+              />
+              <CardContent>
+              
+                <Typography gutterBottom variant="h5">
+                  Star Wars
+                </Typography>
+                <Typography variant='subtitle1'>REACT, REDUX, CSS grid</Typography>
+                <Typography variant="body2" color="textSecondary" component="p">
+                  An application created because of my love for Star Wars! It uses Redux for state managment and Redux thunk for asynchronous requests.
+                  The styling is done with native CSS and CSS grid. It uses hooks for component level state. It also creates CSV files that the users can download. It has many interesting animations.
+                </Typography>
+              </CardContent>
+            </CardActionArea>
+            <CardActions>
+              <Button
+                size="small"
+                color="primary"
+                onClick={() => {
+                  openInNewTab("http://swapitestapp2.herokuapp.com/");
+                }}
+              >
+                live demo
+              </Button>
+            </CardActions>
+          </Card>
+        </Grid>
 
 
 
@@ -195,40 +230,7 @@ const Portfolio = () => {
 
 
 
-        {/*project1*/ }
-        <Grid item xs={12} sm={8} md={6}>
-          <Card className={classes.cardContainer}>
-            <CardActionArea onClick={() => {
-                  openInNewTab("https://affectionate-nobel-93105e.netlify.app/");
-                }}>
-              <CardMedia
-                component="img"
-                alt="project 1"
-                height="140"
-                image={countdown}
-              />
-              <CardContent>
-                <Typography gutterBottom variant="h5">
-                  Countdown App
-                </Typography>
-                <Typography variant="body2" color="textSecondary" component="p">
-                  An app that sets a countdown to an  event created by the user.Once the the date is reached,an intricate animation appears. It uses local storage so even if you exit the browser or refresh, it will continue the countdown like normal.Fully mobile responsive.
-                </Typography>
-              </CardContent>
-            </CardActionArea>
-            <CardActions>
-              <Button
-                size="small"
-                color="primary"
-                onClick={() => {
-                  openInNewTab("https://affectionate-nobel-93105e.netlify.app/");
-                }}
-              >
-                live demo
-              </Button>
-            </CardActions>
-          </Card>
-        </Grid>
+      
 
 
         {/*project2*/ }
@@ -529,37 +531,7 @@ const Portfolio = () => {
         
         
         
-        {/*project 10*/}
-        <Grid item xs={12} sm={8} md={6}>
-          <Card className={classes.cardContainer}>
-            <CardActionArea onClick={() => {
-                openInNewTab("https://mystifying-mirzakhani-7569d0.netlify.app/")}}>
-              <CardMedia
-                component="img"
-                alt="project 1"
-                height="140"
-                image={funnyrobots}
-              />
-              <CardContent>
-                <Typography gutterBottom variant="h5">
-                  Funny robots and programmer jokes
-                </Typography>
-                <Typography variant="body2" color="textSecondary" component="p">
-                  An app that uses two APIs. One that provides programmer jokes and one that 
-                  makes that text input into voice.
-                </Typography>
-              </CardContent>
-            </CardActionArea>
-            <CardActions>
-              <Button size="small" color="primary"
-              onClick={() => {
-                openInNewTab("https://mystifying-mirzakhani-7569d0.netlify.app/")}}>
-                live demo
-              </Button>
-            </CardActions>
-          </Card>
-        </Grid>
-        
+       
         
         
         
