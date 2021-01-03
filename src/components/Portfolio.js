@@ -13,6 +13,7 @@ import {
   Button,
   Typography,
 } from "@material-ui/core";
+import greektours from '../pictures/greektours.png'
 import starwars from '../pictures/starwars.png'
 import Welcometotheguitarstore from '../pictures/Welcometotheguitarstore.png';
 import crownClothing from '../pictures/crownClothing.png';
@@ -51,7 +52,41 @@ const Portfolio = () => {
       <Grid container justify="center">
 
 
-
+    {/*project1*/ }
+    <Grid item xs={12} sm={8} md={6}>
+          <Card className={classes.cardContainer}>
+            <CardActionArea onClick={() => {
+                  openInNewTab("https://greektours.herokuapp.com/");
+                }}>
+              <CardMedia
+                component="img"
+                alt="project 1"
+                height="140"
+                image={greektours}
+              />
+              <CardContent>
+                <Typography gutterBottom variant="h5">
+                  Guitarstore 
+                </Typography>
+                <Typography variant='subtitle1'>MERN STACK</Typography>
+                <Typography variant="body2" color="textSecondary" component="p">
+                  An app created using React for the front-end and Redux for state managment along with Node.js Express and MongoDB for the back-end. It uses native CSS and CSS-grid. Postman was also used for API testing. It also uses the PayPal API for online payments, and Redux-thunk for asynchronous requests. There are also advanced API sorting. The website offers a complete and interactive user experience. The user can browse and buy tours and also check some interesting services. There is (admin/manager) functionality. The admin can create tours, delete or edit registered users and mark orders as completed. The website is completely mobile responsive.
+                </Typography>
+              </CardContent>
+            </CardActionArea>
+            <CardActions>
+              <Button
+                size="small"
+                color="primary"
+                onClick={() => {
+                  openInNewTab("https://greektours.herokuapp.com/");
+                }}
+              >
+                live demo
+              </Button>
+            </CardActions>
+          </Card>
+        </Grid>
 
 
       {/*project1*/ }
@@ -81,7 +116,7 @@ const Portfolio = () => {
                 size="small"
                 color="primary"
                 onClick={() => {
-                  openInNewTab("https://hardcore-villani-eda63f.netlify.app/");
+                  openInNewTab("https://guitarshop2.herokuapp.com/");
                 }}
               >
                 live demo
