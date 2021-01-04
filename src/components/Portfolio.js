@@ -66,7 +66,7 @@ const Portfolio = () => {
               />
               <CardContent>
                 <Typography gutterBottom variant="h5">
-                  Guitarstore 
+                  GreekTours 
                 </Typography>
                 <Typography variant='subtitle1'>MERN STACK</Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
