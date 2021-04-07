@@ -19,14 +19,13 @@ import Welcometotheguitarstore from '../pictures/Welcometotheguitarstore.png';
 import crownClothing from '../pictures/crownClothing.png';
 import Bookstore from "../pictures/Bookstore.jpg";
 import pictureinpicture from "../pictures/pictureinpicture.jpg";
-import landingpage from "../pictures/landingpage.jpg";
 import HandmadeGuitars from "../pictures/HandmadeGuitars1.png";
 import musicplayer from '../pictures/musicplayer.png'
 import gold from '../pictures/gold.png'
 import pong from '../pictures/pong.png'
 import bookmark from '../pictures/bookmark.png'
 import techno from '../pictures/techno.png'
-
+import restaurants from '../pictures/restaurants.jpg'
 const useStyles = makeStyles({
   mainContainer: {
     background: "#233",
@@ -52,7 +51,46 @@ const Portfolio = () => {
       <Grid container justify="center">
 
 
-    {/*project1*/ }
+           {/*project 1*/ }
+           <Grid item xs={12} sm={8} md={6}>
+          <Card className={classes.cardContainer}>
+          <CardActionArea   onClick={() => {
+                  openInNewTab("https://greekrestaurantsapp.herokuapp.com/");
+                }}>
+              <CardMedia
+                component="img"
+                alt="project 1"
+                height="140"
+                image={restaurants}
+              />
+              <CardContent>
+                <Typography gutterBottom variant="h5">
+                  Restaurants App
+                </Typography>
+                <Typography variant='subtitle1'>MERN STACK</Typography>
+                <Typography variant="body2" color="textSecondary" component="p">
+                  A real world application written with the MERN stack. The backend is written with Express and it uses cookies and JWT for user authentication. There is also advanced filtering, pagination and sorting. Geo Json is also used to find the users prefered search area. The api is secure and sanitized. There are also advanced schema relationships. The frontend is written in React with Redux for state management. There are different dashboards for each type of user: owner, admin , user. Styled components were also used. It is mobile responsive. There is login , register, browsing, shopping cart and paypal functionality. The users can also change their usernames , passwords and emails and the admin can change their status.Owners can create their own restaurants and manage them with orders and dishes functionality and the admin can manage all the restaurants. The admin can also delete users.
+                </Typography>
+              </CardContent>
+            </CardActionArea>
+            <CardActions>
+              <Button
+                size="small"
+                color="primary"
+                onClick={() => {
+                  openInNewTab("https://greekrestaurantsapp.herokuapp.com/");
+                }}
+              >
+                live demo
+              </Button>
+            </CardActions>
+          </Card>
+        </Grid>
+
+
+        {/*project1*/}
+        
+        
     <Grid item xs={12} sm={8} md={6}>
           <Card className={classes.cardContainer}>
             <CardActionArea onClick={() => {
@@ -571,38 +609,7 @@ const Portfolio = () => {
         
         
         
-        {/*project 11*/ }
-        <Grid item xs={12} sm={8} md={6}>
-          <Card className={classes.cardContainer}>
-            <CardActionArea>
-              <CardMedia
-                component="img"
-                alt="project 1"
-                height="140"
-                image={landingpage}
-              />
-              <CardContent>
-                <Typography gutterBottom variant="h5">
-                  Landing page
-                </Typography>
-                <Typography variant="body2" color="textSecondary" component="p">
-                  A company landing page with many complex animations. 
-                </Typography>
-              </CardContent>
-            </CardActionArea>
-            <CardActions>
-              <Button
-                size="small"
-                color="primary"
-                onClick={() => {
-                  openInNewTab("https://heuristic-murdock-15e38d.netlify.app/");
-                }}
-              >
-                live demo
-              </Button>
-            </CardActions>
-          </Card>
-        </Grid>
+     
       </Grid>
     </Box>
   );
