@@ -23,10 +23,12 @@ const Resume = () => {
           <h2 className="subtitle1">Enrolled in the school of humanities in the University of Patras<br/>Department of Philology</h2>
           <h2 className="subtitle">2016</h2>
           <h2 className="subtitle1">B.A in classics and literature,<br/>Linguistics</h2>
+          <h2 className="subtitle">2021</h2>
+          <h2 className="subtitle1">Works as Software Support Enginner At Phaistos Networks</h2>
           <h2 className="subtitle"> Computer Languages:</h2>
-          <h2 className="subtitle1">Javascript, Typescript<br/>Python</h2>
+          <h2 className="subtitle1">Javascript, Typescript, PHP<br/>Python</h2>
           <h2 className="subtitle"> Skills:</h2>
-          <h2 className="subtitle1">HTML , CSS , React, Redux, Vue ,Vuex <br/> Node.js, express, MongoDB <br/> Photoshop</h2>
+          <h2 className="subtitle1">HTML , CSS , React, Redux, Vue<br/> Node.js, express, MongoDB, Postgress, MariaDB <br/> Photoshop</h2>
           <h2 className="subtitle">Languages:</h2>
           <h2 className="subtitle1">Professional English, B2 level of spanish, Basic Russian<br/>Native Greek</h2>
           <br/>
