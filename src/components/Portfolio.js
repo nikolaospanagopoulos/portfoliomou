@@ -13,6 +13,7 @@ import {
   Button,
   Typography,
 } from "@material-ui/core";
+import newPlayer from '../pictures/newPlayer.jpg'
 import greektours from "../pictures/greektours.png";
 import starwars from "../pictures/starwars.png";
 import Welcometotheguitarstore from "../pictures/Welcometotheguitarstore.png";
@@ -45,7 +46,51 @@ const Portfolio = () => {
       <Navbar />
       <Grid container justify="center">
 
-
+      <Grid item xs={12} sm={8} md={6}>
+          <Card className={classes.cardContainer}>
+            <CardActionArea
+              onClick={() => {
+                openInNewTab("https://compassionate-newton-6f7e49.netlify.app/");
+              }}
+            >
+              <CardMedia
+                component="img"
+                alt="project 1"
+                height="140"
+                image={newPlayer}
+              />
+              <CardContent>
+                <Typography gutterBottom variant="h5">
+                Video Ads Player Version 3
+                </Typography>
+                <Typography variant="subtitle1">Javascript</Typography>
+                <Typography variant="body2" color="textSecondary" component="p">
+                A video player created with pure javascript. Not even a single external library is used. Everything is bundled and built by webpack. The google Ima SDK is fully integrated with a lot of custom functionality. There are also higher order functions, pure OOP and state managment using modern practises.
+                </Typography>
+              </CardContent>
+            </CardActionArea>
+            <CardActions>
+              <Button
+                size="small"
+                color="primary"
+                onClick={() => {
+                  openInNewTab("https://compassionate-newton-6f7e49.netlify.app/");
+                }}
+              >
+                live demo
+              </Button>
+              <Button
+                size="small"
+                color="primary"
+                onClick={() => {
+                  openInNewTab("https://github.com/nikolaospanagopoulos/AdPlayerV3");
+                }}
+              >
+                GitHub
+              </Button>
+            </CardActions>
+          </Card>
+        </Grid>
       <Grid item xs={12} sm={8} md={6}>
           <Card className={classes.cardContainer}>
             <CardActionArea
