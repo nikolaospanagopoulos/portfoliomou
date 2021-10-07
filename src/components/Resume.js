@@ -24,7 +24,7 @@ const Resume = () => {
           <h2 className="subtitle">2016</h2>
           <h2 className="subtitle1">B.A in classics and literature,<br/>Linguistics</h2>
           <h2 className="subtitle">2021</h2>
-          <h2 className="subtitle1">Works as Software Support Enginner At Phaistos Networks</h2>
+          <h2 className="subtitle1">Works as Software Support Engineer At Phaistos Networks</h2>
           <h2 className="subtitle"> Computer Languages:</h2>
           <h2 className="subtitle1">Javascript, Typescript, PHP<br/>Python</h2>
           <h2 className="subtitle"> Skills:</h2>
