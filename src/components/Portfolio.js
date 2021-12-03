@@ -13,15 +13,14 @@ import {
   Button,
   Typography,
 } from "@material-ui/core";
-import newPlayer from '../pictures/newPlayer.jpg'
 import greektours from "../pictures/greektours.png";
 import starwars from "../pictures/starwars.png";
 import Welcometotheguitarstore from "../pictures/Welcometotheguitarstore.png";
 import pictureinpicture from "../pictures/pictureinpicture.jpg";
 import HandmadeGuitars from "../pictures/HandmadeGuitars1.png";
-import videoPlayer from '../pictures/Capture.PNG'
 import techno from "../pictures/techno.png";
 import restaurants from "../pictures/restaurants.jpg";
+import greekPlayer from "../pictures/greekPlayer.PNG";
 const useStyles = makeStyles({
   mainContainer: {
     background: "#233",
@@ -50,22 +49,22 @@ const Portfolio = () => {
           <Card className={classes.cardContainer}>
             <CardActionArea
               onClick={() => {
-                openInNewTab("https://compassionate-newton-6f7e49.netlify.app/");
+                openInNewTab("https://greekplayer.netlify.app/demo2.html");
               }}
             >
               <CardMedia
                 component="img"
                 alt="project 1"
                 height="140"
-                image={newPlayer}
+                image={greekPlayer}
               />
               <CardContent>
                 <Typography gutterBottom variant="h5">
-                Video Ads Player Version 3
+               Greek Player
                 </Typography>
                 <Typography variant="subtitle1">Javascript</Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
-                A video player created with pure javascript. Not even a single external library is used. Everything is bundled and built by webpack. The google Ima SDK is fully integrated with a lot of custom functionality. There are also higher order functions, pure OOP and state managment using modern practises.
+                A video player created with pure javascript. Not even a single library was used beyond esBuild. A very fast bundler written in google Go. It is written in a completely OOP approach, with emphasis on encapsulation. Functional programming is also used (pure functions, less side effects, immutability of state). The player can play any type of ad (vast, vast-vpaid) and has the google IMA api fully integrated. There are all the functionalities of a modern player and more are being added. This project will continue being updated in the future. The only thing someone needs to use it, is a div and a special Id (for more details check github link).
                 </Typography>
               </CardContent>
             </CardActionArea>
@@ -74,7 +73,7 @@ const Portfolio = () => {
                 size="small"
                 color="primary"
                 onClick={() => {
-                  openInNewTab("https://compassionate-newton-6f7e49.netlify.app/");
+                  openInNewTab("https://greekplayer.netlify.app/demo2.html");
                 }}
               >
                 live demo
@@ -91,52 +90,7 @@ const Portfolio = () => {
             </CardActions>
           </Card>
         </Grid>
-      <Grid item xs={12} sm={8} md={6}>
-          <Card className={classes.cardContainer}>
-            <CardActionArea
-              onClick={() => {
-                openInNewTab("https://brave-bardeen-1c08eb.netlify.app/");
-              }}
-            >
-              <CardMedia
-                component="img"
-                alt="project 1"
-                height="140"
-                image={videoPlayer}
-              />
-              <CardContent>
-                <Typography gutterBottom variant="h5">
-                Video Ads Player
-                </Typography>
-                <Typography variant="subtitle1">Javascript</Typography>
-                <Typography variant="body2" color="textSecondary" component="p">
-                  A complete video player, built with vanilla javascript without any dependencies. It is very fast, reliable and with google ima ads fully integrated. It is entirely built with an Object Oriented Approach. There are a lot of custom functionalities. 
-                  A user can pass options that allow ads or not, can set the width and height, the autoplay functionality, if they want it to follow a specific element and of course the video source. It is a work in progress and completely open source. New feautures are being added every day.
-                </Typography>
-              </CardContent>
-            </CardActionArea>
-            <CardActions>
-              <Button
-                size="small"
-                color="primary"
-                onClick={() => {
-                  openInNewTab("https://brave-bardeen-1c08eb.netlify.app/");
-                }}
-              >
-                live demo
-              </Button>
-              <Button
-                size="small"
-                color="primary"
-                onClick={() => {
-                  openInNewTab("https://github.com/nikolaospanagopoulos/adPlayer");
-                }}
-              >
-                GitHub
-              </Button>
-            </CardActions>
-          </Card>
-        </Grid>
+      
 
         {/*project 1*/}
         <Grid item xs={12} sm={8} md={6}>
