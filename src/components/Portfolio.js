@@ -1,6 +1,5 @@
 import React from "react";
 import Navbar from "./Navbar";
-
 import { makeStyles } from "@material-ui/core/styles";
 import {
   Box,
@@ -44,8 +43,177 @@ const Portfolio = () => {
     <Box component="div" className={classes.mainContainer}>
       <Navbar />
       <Grid container justify="center">
+        <Grid item xs={12} sm={8} md={6}>
+          <Card className={classes.cardContainer}>
+            <CardActionArea
+              onClick={() => {
+                openInNewTab("https://github.com/nikolaospanagopoulos/chip8");
+              }}
+            >
+              <CardMedia
+                component="img"
+                alt="project 1"
+                height="140"
+                image="https://blog.scottlogic.com/ceberhardt/assets/featured/chip8.png"
+              />
+              <CardContent>
+                <Typography gutterBottom variant="h5">
+                  C++ Chip8 emulator
+                </Typography>
+                <Typography variant="subtitle1">C++</Typography>
+                <Typography variant="body2" color="textSecondary" component="p">
+                  An emulator for the chip8 virtual machine of the 1970s. C++ is
+                  used along with a lot of bitshifting to simulate all of the
+                  instruction set. A lot of games are included like Pong,
+                  invaders etc.
+                </Typography>
+              </CardContent>
+            </CardActionArea>
+            <CardActions>
+              <Button
+                size="small"
+                color="primary"
+                onClick={() => {
+                  openInNewTab("https://github.com/nikolaospanagopoulos/chip8");
+                }}
+              >
+                GitHub
+              </Button>
+            </CardActions>
+          </Card>
+        </Grid>
 
-      <Grid item xs={12} sm={8} md={6}>
+        <Grid item xs={12} sm={8} md={6}>
+          <Card className={classes.cardContainer}>
+            <CardActionArea
+              onClick={() => {
+                openInNewTab(
+                  "https://github.com/nikolaospanagopoulos/grapeshotClone2"
+                );
+              }}
+            >
+              <CardMedia
+                component="img"
+                alt="project 1"
+                height="140"
+                image="https://prod-discovery.edx-cdn.org/media/course/image/62ed92c9-22b6-43a6-a755-0f296d0f64ce-8b3c8aa8f0af.small.jpeg"
+              />
+              <CardContent>
+                <Typography gutterBottom variant="h5">
+                  C++ grapeshot clone
+                </Typography>
+                <Typography variant="subtitle1">C++</Typography>
+                <Typography variant="body2" color="textSecondary" component="p">
+                  A high performance application that analyzes a website and
+                  understands its content. For example war,crime, fun etc. It is
+                  written completely in C++, following the best and very modern
+                  practises. It includes a custom html parser. Mysql is also
+                  used. For more details please visit the github link.
+                </Typography>
+              </CardContent>
+            </CardActionArea>
+            <CardActions>
+              <Button
+                size="small"
+                color="primary"
+                onClick={() => {
+                  openInNewTab(
+                    "https://github.com/nikolaospanagopoulos/grapeshotClone2"
+                  );
+                }}
+              >
+                GitHub
+              </Button>
+            </CardActions>
+          </Card>
+        </Grid>
+
+        <Grid item xs={12} sm={8} md={6}>
+          <Card className={classes.cardContainer}>
+            <CardActionArea
+              onClick={() => {
+                openInNewTab(
+                  "https://github.com/nikolaospanagopoulos/searchengine"
+                );
+              }}
+            >
+              <CardMedia
+                component="img"
+                alt="project 1"
+                height="140"
+                image="https://d1zviajkun9gxg.cloudfront.net/user/prod/2020/01/05/fastpages-892f9602-fc52-42e6-9e81-2ea8f1477f89.png"
+              />
+              <CardContent>
+                <Typography gutterBottom variant="h5">
+                  Search engine
+                </Typography>
+                <Typography variant="subtitle1">Php</Typography>
+                <Typography variant="body2" color="textSecondary" component="p">
+                  A search engine similar to google, built upon a custom php
+                  framework I created. It is fast, with analytics, including a
+                  web crawler.
+                </Typography>
+              </CardContent>
+            </CardActionArea>
+            <CardActions>
+              <Button
+                size="small"
+                color="primary"
+                onClick={() => {
+                  openInNewTab(
+                    "https://github.com/nikolaospanagopoulos/searchengine"
+                  );
+                }}
+              >
+                GitHub
+              </Button>
+            </CardActions>
+          </Card>
+        </Grid>
+        <Grid item xs={12} sm={8} md={6}>
+          <Card className={classes.cardContainer}>
+            <CardActionArea
+              onClick={() => {
+                openInNewTab(
+                  "https://github.com/nikolaospanagopoulos/phpFrameworkWithExtraAuth"
+                );
+              }}
+            >
+              <CardMedia
+                component="img"
+                alt="project 1"
+                height="140"
+                image="https://d1zviajkun9gxg.cloudfront.net/user/prod/2020/01/05/fastpages-892f9602-fc52-42e6-9e81-2ea8f1477f89.png"
+              />
+              <CardContent>
+                <Typography gutterBottom variant="h5">
+                  Custom Php Framework
+                </Typography>
+                <Typography variant="subtitle1">Php</Typography>
+                <Typography variant="body2" color="textSecondary" component="p">
+                  A custom PHP framework, similar to codeigniter. Very light and
+                  fast, but with all the functionalities needed for a complete
+                  application. User authentication, mail verification and
+                  password reset are included
+                </Typography>
+              </CardContent>
+            </CardActionArea>
+            <CardActions>
+              <Button
+                size="small"
+                color="primary"
+                onClick={() => {
+                  openInNewTab(
+                    "https://github.com/nikolaospanagopoulos/phpFrameworkWithExtraAuth"
+                  );
+                }}
+              >
+                GitHub
+              </Button>
+            </CardActions>
+          </Card>
+        </Grid>
+        <Grid item xs={12} sm={8} md={6}>
           <Card className={classes.cardContainer}>
             <CardActionArea
               onClick={() => {
@@ -60,11 +228,21 @@ const Portfolio = () => {
               />
               <CardContent>
                 <Typography gutterBottom variant="h5">
-               Greek Player
+                  Greek Player
                 </Typography>
                 <Typography variant="subtitle1">Javascript</Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
-                A video player created with pure javascript. Not even a single library was used beyond esBuild. A very fast bundler written in google Go. It is written in a completely OOP approach, with emphasis on encapsulation. Functional programming is also used (pure functions, less side effects, immutability of state). The player can play any type of ad (vast, vast-vpaid) and has the google IMA api fully integrated. There are all the functionalities of a modern player and more are being added. This project will continue being updated in the future. The only thing someone needs to use it, is a div and a special Id (for more details check github link).
+                  A video player created with pure javascript. Not even a single
+                  library was used beyond esBuild. A very fast bundler written
+                  in google Go. It is written in a completely OOP approach, with
+                  emphasis on encapsulation. Functional programming is also used
+                  (pure functions, less side effects, immutability of state).
+                  The player can play any type of ad (vast, vast-vpaid) and has
+                  the google IMA api fully integrated. There are all the
+                  functionalities of a modern player and more are being added.
+                  This project will continue being updated in the future. The
+                  only thing someone needs to use it, is a div and a special Id
+                  (for more details check github link).
                 </Typography>
               </CardContent>
             </CardActionArea>
@@ -82,339 +260,12 @@ const Portfolio = () => {
                 size="small"
                 color="primary"
                 onClick={() => {
-                  openInNewTab("https://github.com/nikolaospanagopoulos/AdPlayerV3");
-                }}
-              >
-                GitHub
-              </Button>
-            </CardActions>
-          </Card>
-        </Grid>
-      
-
-        {/*project 1*/}
-        <Grid item xs={12} sm={8} md={6}>
-          <Card className={classes.cardContainer}>
-            <CardActionArea
-              onClick={() => {
-                openInNewTab("https://greekrestaurantsapp.herokuapp.com/");
-              }}
-            >
-              <CardMedia
-                component="img"
-                alt="project 1"
-                height="140"
-                image={restaurants}
-              />
-              <CardContent>
-                <Typography gutterBottom variant="h5">
-                  Restaurants App
-                </Typography>
-                <Typography variant="subtitle1">MERN STACK</Typography>
-                <Typography variant="body2" color="textSecondary" component="p">
-                  A real world food delivery application. It uses advanced
-                  authentication with cookies , geojson to find restaurants near
-                  the users prefered location, registration and password
-                  recovery emails and different actions that can be performed
-                  according to the users role. There is fully functional admin
-                  and owner managing dashboard. The api is very extensive and
-                  postman was used to test it. The frontend was created using
-                  React and Redux for state managment. Styled components were
-                  also used, along with advanced css like flexbox. Redux thunk
-                  was used for asynchronous requests. Also most of the backend
-                  middleware is custom.
-                </Typography>
-              </CardContent>
-            </CardActionArea>
-            <CardActions>
-              <Button
-                size="small"
-                color="primary"
-                onClick={() => {
-                  openInNewTab("https://greekrestaurantsapp.herokuapp.com/");
-                }}
-              >
-                live demo
-              </Button>
-              <Button
-                size="small"
-                color="primary"
-                onClick={() => {
-                  openInNewTab("https://github.com/nikolaospanagopoulos/restaurantsapp");
-                }}
-              >
-                GitHub
-              </Button>
-            </CardActions>
-          </Card>
-        </Grid>
-
-        {/*project1*/}
-
-        <Grid item xs={12} sm={8} md={6}>
-          <Card className={classes.cardContainer}>
-            <CardActionArea
-              onClick={() => {
-                openInNewTab("https://greektours.herokuapp.com/");
-              }}
-            >
-              <CardMedia
-                component="img"
-                alt="project 1"
-                height="140"
-                image={greektours}
-              />
-              <CardContent>
-                <Typography gutterBottom variant="h5">
-                  GreekTours
-                </Typography>
-                <Typography variant="subtitle1">MERN STACK</Typography>
-                <Typography variant="body2" color="textSecondary" component="p">
-                  An app created using React for the front-end and Redux for
-                  state managment along with Node.js Express and MongoDB for the
-                  back-end. It uses native CSS and CSS-grid. Postman was also
-                  used for API testing. It also uses the PayPal API for online
-                  payments, and Redux-thunk for asynchronous requests. There are
-                  also advanced API sorting. The website offers a complete and
-                  interactive user experience. The user can browse and buy tours
-                  and also check some interesting services. There is
-                  (admin/manager) functionality. The admin can create tours,
-                  delete or edit registered users and mark orders as completed.
-                  The website is completely mobile responsive.
-                </Typography>
-              </CardContent>
-            </CardActionArea>
-            <CardActions>
-              <Button
-                size="small"
-                color="primary"
-                onClick={() => {
-                  openInNewTab("https://greektours.herokuapp.com/");
-                }}
-              >
-                live demo
-              </Button>
-              <Button
-                size="small"
-                color="primary"
-                onClick={() => {
-                  openInNewTab("https://github.com/nikolaospanagopoulos/greecetours");
-                }}
-              >
-                GitHub
-              </Button>
-            </CardActions>
-          </Card>
-        </Grid>
-
-        {/*project1*/}
-        <Grid item xs={12} sm={8} md={6}>
-          <Card className={classes.cardContainer}>
-            <CardActionArea
-              onClick={() => {
-                openInNewTab("https://guitarshop2.herokuapp.com/");
-              }}
-            >
-              <CardMedia
-                component="img"
-                alt="project 1"
-                height="140"
-                image={Welcometotheguitarstore}
-              />
-              <CardContent>
-                <Typography gutterBottom variant="h5">
-                  Guitarstore
-                </Typography>
-                <Typography variant="subtitle1">MERN STACK</Typography>
-                <Typography variant="body2" color="textSecondary" component="p">
-                  A full-stack application using the React for the front-end,
-                  Redux for state managment, Node.js and express for the
-                  back-end , and MongoDB as a database. It also uses the PayPal
-                  api and bootstrap. It has real world functionality. The
-                  customer can buy products that are in stock, he can leave
-                  reviews and see the top products through the carousel
-                  component. When the website manager enters with his
-                  credentials, he can add new products, he can update existing
-                  ones and add them to stock , he can complete orders with
-                  shipping and he can manage users.
-                </Typography>
-              </CardContent>
-            </CardActionArea>
-            <CardActions>
-              <Button
-                size="small"
-                color="primary"
-                onClick={() => {
-                  openInNewTab("https://guitarshop2.herokuapp.com/");
-                }}
-              >
-                live demo
-              </Button>
-            </CardActions>
-          </Card>
-        </Grid>
-
-        {/*project 2*/}
-        <Grid item xs={12} sm={8} md={6}>
-          <Card className={classes.cardContainer}>
-            <CardActionArea
-              onClick={() => {
-                openInNewTab("http://swapitestapp2.herokuapp.com/");
-              }}
-            >
-              <CardMedia
-                component="img"
-                alt="project 1"
-                height="140"
-                image={starwars}
-              />
-              <CardContent>
-                <Typography gutterBottom variant="h5">
-                  Star Wars
-                </Typography>
-                <Typography variant="subtitle1">
-                  REACT, REDUX, CSS grid
-                </Typography>
-                <Typography variant="body2" color="textSecondary" component="p">
-                  An application created because of my love for Star Wars! It
-                  uses Redux for state managment and Redux thunk for
-                  asynchronous requests. The styling is done with native CSS and
-                  CSS grid. It uses hooks for component level state. It also
-                  creates CSV files that the users can download. It has many
-                  interesting animations.
-                </Typography>
-              </CardContent>
-            </CardActionArea>
-            <CardActions>
-              <Button
-                size="small"
-                color="primary"
-                onClick={() => {
-                  openInNewTab("http://swapitestapp2.herokuapp.com/");
-                }}
-              >
-                live demo
-              </Button>
-            </CardActions>
-          </Card>
-        </Grid>
-
-        {/*project 2*/}
-        <Grid item xs={12} sm={8} md={6}>
-          <Card className={classes.cardContainer}>
-            <CardActionArea
-              onClick={() => {
-                openInNewTab("https://reverent-newton-5fa4e4.netlify.app/");
-              }}
-            >
-              <CardMedia
-                component="img"
-                alt="project 1"
-                height="140"
-                image={techno}
-              />
-              <CardContent>
-                <Typography gutterBottom variant="h5">
-                  Animated Techno Website
-                </Typography>
-                <Typography variant="subtitle1">REACT</Typography>
-                <Typography variant="body2" color="textSecondary" component="p">
-                  A company landing page coded with React, React-Hooks and
-                  particle.js . It uses animations and interactions to provide a
-                  unique user experience.
-                </Typography>
-              </CardContent>
-            </CardActionArea>
-            <CardActions>
-              <Button
-                size="small"
-                color="primary"
-                onClick={() => {
-                  openInNewTab("https://reverent-newton-5fa4e4.netlify.app/");
-                }}
-              >
-                live demo
-              </Button>
-            </CardActions>
-          </Card>
-        </Grid>
-
-        {/*project 5*/}
-        <Grid item xs={12} sm={8} md={6}>
-          <Card
-            className={classes.cardContainer}
-            onClick={() => {
-              openInNewTab("https://angry-varahamihira-869d72.netlify.app/");
-            }}
-          >
-            <CardActionArea>
-              <CardMedia
-                component="img"
-                alt="project 1"
-                height="140"
-                image={HandmadeGuitars}
-              />
-              <CardContent>
-                <Typography gutterBottom variant="h5">
-                  Handmade guitars e-commerce site
-                </Typography>
-                <Typography variant="body2" color="textSecondary" component="p">
-                  A fully mobile responsive site, with animations and light
-                  mode-dark mode functionality. It uses local storage so the
-                  user's preferences will be saved even if the page is refreshed
-                  or the browser closed.
-                </Typography>
-              </CardContent>
-            </CardActionArea>
-            <CardActions>
-              <Button
-                size="small"
-                color="primary"
-                onClick={() => {
                   openInNewTab(
-                    "https://angry-varahamihira-869d72.netlify.app/"
+                    "https://github.com/nikolaospanagopoulos/player8"
                   );
                 }}
               >
-                live demo
-              </Button>
-            </CardActions>
-          </Card>
-        </Grid>
-
-        {/*project 9*/}
-        <Grid item xs={12} sm={8} md={6}>
-          <Card className={classes.cardContainer}>
-            <CardActionArea
-              onClick={() => {
-                openInNewTab("https://suspicious-shaw-2c6d3f.netlify.app/");
-              }}
-            >
-              <CardMedia
-                component="img"
-                alt="project 1"
-                height="140"
-                image={pictureinpicture}
-              />
-              <CardContent>
-                <Typography gutterBottom variant="h5">
-                  Locked on screen
-                </Typography>
-                <Typography variant="body2" color="textSecondary" component="p">
-                  An App that allows the user to have a picture in picture
-                  possiblity by saving a screen.
-                </Typography>
-              </CardContent>
-            </CardActionArea>
-            <CardActions>
-              <Button
-                size="small"
-                color="primary"
-                onClick={() => {
-                  openInNewTab("https://suspicious-shaw-2c6d3f.netlify.app/");
-                }}
-              >
-                live demo
+                GitHub
               </Button>
             </CardActions>
           </Card>

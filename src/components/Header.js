@@ -6,46 +6,43 @@ import Typed from "react-typed";
 import { makeStyles } from "@material-ui/core/styles";
 
 //css styles
-const useStyles=makeStyles(theme=>({
-    avatar:{
-        width:theme.spacing(15),
-        height:theme.spacing(15),
-        margin:theme.spacing(1)
-    },
-    title:{
-        color:"tomato"
-    },
-    subtitle:{
-        color:"orangered"
-    },
-    extrasubtitle:{
-        color:"darkorange",
-        fontSize:50
-    },
-    typedContainer:{
-        position:"absolute",
-        top:"50%",
-        left:"50%",
-        transform:"translate(-50%,-50%)",
-        width:"100vw",
-        textAlign:"center",
-        zIndex:1
-    }
-}))
-
-
+const useStyles = makeStyles((theme) => ({
+  avatar: {
+    width: theme.spacing(15),
+    height: theme.spacing(15),
+    margin: theme.spacing(1),
+  },
+  title: {
+    color: "tomato",
+  },
+  subtitle: {
+    color: "orangered",
+  },
+  extrasubtitle: {
+    color: "darkorange",
+    fontSize: 50,
+  },
+  typedContainer: {
+    position: "absolute",
+    top: "50%",
+    left: "50%",
+    transform: "translate(-50%,-50%)",
+    width: "100vw",
+    textAlign: "center",
+    zIndex: 1,
+  },
+}));
 
 const Header = () => {
-  const classes=useStyles();
+  const classes = useStyles();
   return (
     <Box className={classes.typedContainer}>
-        <Grid container justify="center">
-      
-      <Avatar
-        className={classes.avatar}
-        src={me2}
-        alt="Nikolaos Panagopoulos"
-      />
+      <Grid container justify="center">
+        <Avatar
+          className={classes.avatar}
+          src={me2}
+          alt="Nikolaos Panagopoulos"
+        />
       </Grid>
       <Typography className={classes.title} variant="h4">
         <Typed strings={["Nikolaos Panagopoulos"]} typeSpeed={40} />
@@ -53,16 +50,16 @@ const Header = () => {
       <br />
       <Typography className={classes.subtitle} variant="h5">
         <Typed
-          strings={["Full Stack Developer"]}
+          strings={["Software Developer"]}
           typeSpeed={40}
           backSpeed={60}
           loop
         />
       </Typography>
       <br />
-      <Typography   className={classes.extrasubtitle} variant="h5">
+      <Typography className={classes.extrasubtitle} variant="h5">
         <Typed
-          strings={["React", "Redux","MongoDB", "Node.js", "Javascript", "express"]}
+          strings={["Systems Programming", "C++", "MySql", "Php", "Javascript"]}
           typeSpeed={40}
           backSpeed={60}
           loop

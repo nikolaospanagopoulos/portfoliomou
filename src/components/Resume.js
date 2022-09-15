@@ -2,43 +2,33 @@ import React from "react";
 import Navbar from "./Navbar";
 import "./Resume.css";
 
-  
-
 const Resume = () => {
   return (
-   
     <div className="resume">
       <div>
         <Navbar />
-        <div className="text" >
-        <br/>
-        <br/>
-        <br/>
-          <div className="box">
-            
-          <h1 className="title">Resume</h1>
-          </div>
-          <br/>
-          <h2 className="subtitle">2011</h2>
-          <h2 className="subtitle1">Enrolled in the school of humanities in the University of Patras<br/>Department of Philology</h2>
-          <h2 className="subtitle">2016</h2>
-          <h2 className="subtitle1">B.A in classics and literature,<br/>Linguistics</h2>
-          <h2 className="subtitle">2021</h2>
-          <h2 className="subtitle1">Works as Software Support Engineer At Phaistos Networks</h2>
-          <h2 className="subtitle"> Computer Languages:</h2>
-          <h2 className="subtitle1">Javascript, Typescript, PHP<br/>Python</h2>
-          <h2 className="subtitle"> Skills:</h2>
-          <h2 className="subtitle1">HTML , CSS , React, Redux, Vue<br/> Node.js, express, MongoDB, Postgress, MariaDB <br/> Photoshop</h2>
-          <h2 className="subtitle">Languages:</h2>
-          <h2 className="subtitle1">Professional English, B2 level of spanish, Basic Russian<br/>Native Greek</h2>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
+        <div className="text">
+          <h1 className="subtitle">Skills</h1>
+          <h2 className="subtitle1"></h2>
+          <h2 className="subtitle">Systems Programming</h2>
+          <h2 className="subtitle1">Languages: C, C++</h2>
+          <h2 className="subtitle1">
+            operating systems, Kernel development, bit manupulation
+          </h2>
+          <h2 className="subtitle">Web Programming</h2>
+          <h2 className="subtitle1">Languages: php, Javascript</h2>
+          <h2 className="subtitle1">Javascript: vanilla, React</h2>
+          <h2 className="subtitle1">Php: vanilla, code igniter</h2>
+          <h2 className="subtitle">Databases</h2>
+          <h2 className="subtitle1">SQL: mysql, postgress</h2>
+          <h2 className="subtitle1">NoSQL: mongoDB</h2>
+          <br />
+          <br />
+          <br />
+          <br />
         </div>
       </div>
     </div>
-    
   );
 };
 
