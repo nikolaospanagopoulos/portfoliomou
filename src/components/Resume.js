@@ -8,8 +8,7 @@ const Resume = () => {
       <div>
         <Navbar />
         <div className="text">
-          <h1 className="subtitle">Skills</h1>
-          <h2 className="subtitle1"></h2>
+          <h1 className="subtitle"> Skills </h1>
           <h2 className="subtitle">Systems Programming</h2>
           <h2 className="subtitle1">Languages: C, C++</h2>
           <h2 className="subtitle1">
@@ -17,7 +16,7 @@ const Resume = () => {
           </h2>
           <h2 className="subtitle">Web Programming</h2>
           <h2 className="subtitle1">Languages: php, Javascript</h2>
-          <h2 className="subtitle1">Javascript: vanilla, React</h2>
+          <h2 className="subtitle1">Javascript, Node.js, React, vue</h2>
           <h2 className="subtitle1">Php: vanilla, code igniter</h2>
           <h2 className="subtitle">Databases</h2>
           <h2 className="subtitle1">SQL: mysql, postgress</h2>
