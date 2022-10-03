@@ -12,13 +12,6 @@ import {
   Button,
   Typography,
 } from "@material-ui/core";
-import greektours from "../pictures/greektours.png";
-import starwars from "../pictures/starwars.png";
-import Welcometotheguitarstore from "../pictures/Welcometotheguitarstore.png";
-import pictureinpicture from "../pictures/pictureinpicture.jpg";
-import HandmadeGuitars from "../pictures/HandmadeGuitars1.png";
-import techno from "../pictures/techno.png";
-import restaurants from "../pictures/restaurants.jpg";
 import greekPlayer from "../pictures/greekPlayer.PNG";
 const useStyles = makeStyles({
   mainContainer: {
