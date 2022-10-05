@@ -12,7 +12,6 @@ import {
   Button,
   Typography,
 } from "@material-ui/core";
-import greekPlayer from "../pictures/greekPlayer.PNG";
 const useStyles = makeStyles({
   mainContainer: {
     background: "#233",
@@ -93,7 +92,7 @@ const Portfolio = () => {
               />
               <CardContent>
                 <Typography gutterBottom variant="h5">
-                  C++ grapeshot clone
+                  C++ website Analyser
                 </Typography>
                 <Typography variant="subtitle1">C++</Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
@@ -198,63 +197,6 @@ const Portfolio = () => {
                 onClick={() => {
                   openInNewTab(
                     "https://github.com/nikolaospanagopoulos/phpFrameworkWithExtraAuth"
-                  );
-                }}
-              >
-                GitHub
-              </Button>
-            </CardActions>
-          </Card>
-        </Grid>
-        <Grid item xs={12} sm={8} md={6}>
-          <Card className={classes.cardContainer}>
-            <CardActionArea
-              onClick={() => {
-                openInNewTab("https://greekplayer.netlify.app/demo2.html");
-              }}
-            >
-              <CardMedia
-                component="img"
-                alt="project 1"
-                height="140"
-                image={greekPlayer}
-              />
-              <CardContent>
-                <Typography gutterBottom variant="h5">
-                  Greek Player
-                </Typography>
-                <Typography variant="subtitle1">Javascript</Typography>
-                <Typography variant="body2" color="textSecondary" component="p">
-                  A video player created with pure javascript. Not even a single
-                  library was used beyond esBuild. A very fast bundler written
-                  in google Go. It is written in a completely OOP approach, with
-                  emphasis on encapsulation. Functional programming is also used
-                  (pure functions, less side effects, immutability of state).
-                  The player can play any type of ad (vast, vast-vpaid) and has
-                  the google IMA api fully integrated. There are all the
-                  functionalities of a modern player and more are being added.
-                  This project will continue being updated in the future. The
-                  only thing someone needs to use it, is a div and a special Id
-                  (for more details check github link).
-                </Typography>
-              </CardContent>
-            </CardActionArea>
-            <CardActions>
-              <Button
-                size="small"
-                color="primary"
-                onClick={() => {
-                  openInNewTab("https://greekplayer.netlify.app/demo2.html");
-                }}
-              >
-                live demo
-              </Button>
-              <Button
-                size="small"
-                color="primary"
-                onClick={() => {
-                  openInNewTab(
-                    "https://github.com/nikolaospanagopoulos/player8"
                   );
                 }}
               >
