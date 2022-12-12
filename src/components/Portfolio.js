@@ -46,7 +46,7 @@ const Portfolio = () => {
                 component="img"
                 alt="project 1"
                 height="140"
-                image="https://blog.scottlogic.com/ceberhardt/assets/featured/chip8.png"
+                image="https://prod-discovery.edx-cdn.org/media/course/image/62ed92c9-22b6-43a6-a755-0f296d0f64ce-8b3c8aa8f0af.small.jpeg"
               />
               <CardContent>
                 <Typography gutterBottom variant="h5">
@@ -119,7 +119,48 @@ const Portfolio = () => {
             <CardActionArea
               onClick={() => {
                 openInNewTab(
-                  "https://github.com/nikolaospanagopoulos/grapeshotClone2"
+                  "https://github.com/nikolaospanagopoulos/robotsTxtParser"
+                );
+              }}
+            >
+              <CardMedia
+                component="img"
+                alt="project 1"
+                height="140"
+                image="https://prod-discovery.edx-cdn.org/media/course/image/62ed92c9-22b6-43a6-a755-0f296d0f64ce-8b3c8aa8f0af.small.jpeg"
+              />
+              <CardContent>
+                <Typography gutterBottom variant="h5">
+                  Robots.txt parser
+                </Typography>
+                <Typography variant="subtitle1">C++</Typography>
+                <Typography variant="body2" color="textSecondary" component="p">
+                  A robots.txt parser written in C++. It follows the google
+                  search engine protocols.
+                </Typography>
+              </CardContent>
+            </CardActionArea>
+            <CardActions>
+              <Button
+                size="small"
+                color="primary"
+                onClick={() => {
+                  openInNewTab(
+                    "https://github.com/nikolaospanagopoulos/robotsTxtParser"
+                  );
+                }}
+              >
+                GitHub
+              </Button>
+            </CardActions>
+          </Card>
+        </Grid>
+        <Grid item xs={12} sm={8} md={6}>
+          <Card className={classes.cardContainer}>
+            <CardActionArea
+              onClick={() => {
+                openInNewTab(
+                  "https://github.com/nikolaospanagopoulos/robotsTxtParser"
                 );
               }}
             >
