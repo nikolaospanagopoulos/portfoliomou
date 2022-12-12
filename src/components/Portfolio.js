@@ -39,6 +39,45 @@ const Portfolio = () => {
           <Card className={classes.cardContainer}>
             <CardActionArea
               onClick={() => {
+                openInNewTab("https://github.com/nikolaospanagopoulos/kernel");
+              }}
+            >
+              <CardMedia
+                component="img"
+                alt="project 1"
+                height="140"
+                image="https://blog.scottlogic.com/ceberhardt/assets/featured/chip8.png"
+              />
+              <CardContent>
+                <Typography gutterBottom variant="h5">
+                  Kernel
+                </Typography>
+                <Typography variant="subtitle1">C, 32x assembly</Typography>
+                <Typography variant="body2" color="textSecondary" component="p">
+                  A 32bit kernel written in C and 32x assembly. It uses memory
+                  paging, FAT 16 system and multitasking.
+                </Typography>
+              </CardContent>
+            </CardActionArea>
+            <CardActions>
+              <Button
+                size="small"
+                color="primary"
+                onClick={() => {
+                  openInNewTab(
+                    "https://github.com/nikolaospanagopoulos/kernel"
+                  );
+                }}
+              >
+                GitHub
+              </Button>
+            </CardActions>
+          </Card>
+        </Grid>
+        <Grid item xs={12} sm={8} md={6}>
+          <Card className={classes.cardContainer}>
+            <CardActionArea
+              onClick={() => {
                 openInNewTab("https://github.com/nikolaospanagopoulos/chip8");
               }}
             >
