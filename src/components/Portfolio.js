@@ -162,7 +162,7 @@ const Portfolio = () => {
             <CardActionArea
               onClick={() => {
                 openInNewTab(
-                  "https://github.com/nikolaospanagopoulos/robotsTxtParser"
+                  "https://github.com/nikolaospanagopoulos/websiteAnalyser"
                 );
               }}
             >
@@ -192,7 +192,7 @@ const Portfolio = () => {
                 color="primary"
                 onClick={() => {
                   openInNewTab(
-                    "https://github.com/nikolaospanagopoulos/grapeshotClone2"
+                    "https://github.com/nikolaospanagopoulos/websiteAnalyser"
                   );
                 }}
               >
