@@ -119,7 +119,7 @@ const Portfolio = () => {
             <CardActionArea
               onClick={() => {
                 openInNewTab(
-                  "https://github.com/nikolaospanagopoulos/robotsTxtParser"
+                  "https://github.com/nikolaospanagopoulos/codeEditor"
                 );
               }}
             >
@@ -131,12 +131,14 @@ const Portfolio = () => {
               />
               <CardContent>
                 <Typography gutterBottom variant="h5">
-                  Robots.txt parser
+                  Vim Like Text Editor
                 </Typography>
                 <Typography variant="subtitle1">C++</Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
-                  A robots.txt parser written in C++. It follows the google
-                  search engine protocols.
+                  A very performant text editor written in C++. Modern C++ is
+                  used, including move schematics. It is very similar to vim.
+                  New features are being added. For more information visit the
+                  github link.
                 </Typography>
               </CardContent>
             </CardActionArea>
@@ -146,7 +148,7 @@ const Portfolio = () => {
                 color="primary"
                 onClick={() => {
                   openInNewTab(
-                    "https://github.com/nikolaospanagopoulos/robotsTxtParser"
+                    "https://github.com/nikolaospanagopoulos/codeEditor"
                   );
                 }}
               >
